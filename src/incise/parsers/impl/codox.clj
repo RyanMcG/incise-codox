@@ -22,4 +22,4 @@
       (with-base-url output-dir-path (generate-docs options))
       (remove directory? (file-seq out-dir)))))
 
-(register :codox parse-codox)
+(register :codox #'parse-codox)
